@@ -16,7 +16,7 @@ quiz = {
     },
     "question3": {
         "question": "What is the capital of USA?",
-        "answer": "Wahington DC"
+        "answer": "Washington DC"
     },
     "question4": {
         "question": "What is the capital of India?",
@@ -47,3 +47,7 @@ for key, value in quiz.items():
         print('Wrong' + '\n')
         print('The Answer is: ' + value["answer"] + '\n')
         print("Your score is: " + str(score) + '\n')
+
+print("Your final score: " + str(score) + "/6")
+print("Your Percentage: " + str(int(score/7*100)) + "%") #convert to int before str so that you can concatanate
+print("")
